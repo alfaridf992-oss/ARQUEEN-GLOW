@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Arqueen Glow — Premium Skincare</title>
+
+<style>
+
+:root {
+    --pink:#d94b82;
+    --pink-dark:#ad2e61;
+    --pink-light:#fbe5ed;
+    --gold:#b88a35;
+    --cream:#fffaf8;
+    --dark:#352a2e;
+    --gray:#75686c;
+    --white:#ffffff;
+    --border:rgba(53,42,46,.10);
+    --shadow:0 20px 60px rgba(120,53,80,.13);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family:"DM Sans",Arial,sans-serif;
+    background:var(--cream);
+    color:var(--dark);
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a {
+    text-decoration:none;
+    color:inherit;
+}
+
+img {
+    max-width:100%;
+    display:block;
+}
+
+
+/* HEADER */
+
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,250,248,.88);
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar {
+    width:min(1160px,92%);
+    height:80px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon {
+    width:42px;
+    height:42px;
+    border:1px solid var(--gold);
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    color:var(--gold);
+    font-family:Georgia,serif;
+}
+
+.logo strong {
+    display:block;
+    font-family:Georgia,serif;
+    color:#8b6726;
+    letter-spacing:.08em;
+    font-size:16px;
+}
+
+.logo small {
+    display:block;
+    color:var(--gray);
+    font-size:8px;
+    letter-spacing:.2em;
+}
+
+.nav-menu {
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:28px;
+}
+
+.nav-menu a {
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-menu a:hover {
+    color:var(--pink);
+}
+
+.nav-order {
+    background:var(--dark);
+    color:white!important;
+    padding:11px 18px;
+    border-radius:30px;
+}
+
+.menu-button {
+    display:none;
+    border:none;
+    background:transparent;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    padding:100px 0 80px;
+}
+
+.hero-container {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr .9fr;
+    gap:70px;
+    align-items:center;
+}
+
+.label {
+    color:var(--pink);
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:.2em;
+    display:inline-block;
+    margin-bottom:15px;
+}
+
+.hero h1 {
+    font-family:Georgia,serif;
+    font-size:clamp(60px,8vw,105px);
+    line-height:.98;
+    letter-spacing:-.055em;
+}
+
+.hero h1 span {
+    color:var(--gold);
+}
+
+.hero-text {
+    max-width:560px;
+    color:var(--gray);
+    font-size:17px;
+    margin:25px 0 30px;
+}
+
+.buttons {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 23px;
+    border-radius:50px;
+    border:none;
+    font-size:14px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover {
+    transform:translateY(-3px);
+}
+
+.btn-pink {
+    background:var(--pink);
+    color:white;
+    box-shadow:0 12px 28px rgba(217,75,130,.25);
+}
+
+.btn-pink:hover {
+    background:var(--pink-dark);
+}
+
+.btn-white {
+    background:white;
+    border:1px solid var(--border);
+}
+
+.hero-points {
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:35px;
+    color:var(--gray);
+    font-size:12px;
+}
+
+.hero-image-box {
+    background:white;
+    padding:13px;
+    border-radius:30px;
+    box-shadow:var(--shadow);
+    transform:rotate(1deg);
+}
+
+.image-header {
+    display:flex;
+    justify-content:space-between;
+    padding:12px;
+    color:var(--gold);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:.16em;
+}
+
+.hero-image-box img {
+    width:100%;
+    height:540px;
+    object-fit:cover;
+    border-radius:22px;
+}
+
+.image-caption {
+    padding:17px 10px 8px;
+}
+
+.image-caption span {
+    color:var(--pink);
+    font-size:10px;
+    letter-spacing:.2em;
+    font-weight:800;
+}
+
+.image-caption strong {
+    display:block;
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+
+/* INFO */
+
+.info-bar {
+    background:white;
+    border-top:1px solid var(--border);
+    border-bottom:1px solid var(--border);
+}
+
+.info-container {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.info-item {
+    text-align:center;
+    padding:25px;
+    border-right:1px solid var(--border);
+}
+
+.info-item:last-child {
+    border:none;
+}
+
+.info-item strong {
+    color:var(--gold);
+    font-family:Georgia,serif;
+    margin-right:8px;
+}
+
+.info-item span {
+    color:var(--gray);
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.08em;
+}
+
+
+/* SECTION */
+
+.section {
+    padding:110px 0;
+}
+
+.section-title {
+    width:min(700px,92%);
+    margin:0 auto 55px;
+    text-align:center;
+}
+
+.section-title h2 {
+    font-family:Georgia,serif;
+    font-size:clamp(40px,5vw,60px);
+    line-height:1.1;
+}
+
+.section-title p {
+    color:var(--gray);
+    margin-top:15px;
+}
+
+
+/* PRODUCTS */
+
+.products {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.product-card {
+    background:white;
+    border:1px solid var(--border);
+    border-radius:28px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.product-card:hover {
+    transform:translateY(-8px);
+    box-shadow:var(--shadow);
+}
+
+.product-image {
+    height:290px;
+    position:relative;
+    overflow:hidden;
+    background:var(--pink-light);
+}
+
+.product-image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.product-card:hover .product-image img {
+    transform:scale(1.04);
+}
+
+.product-label {
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:white;
+    padding:6px 11px;
+    border-radius:20px;
+    font-size:9px;
+    font-weight:800;
+}
+
+.product-content {
+    padding:25px;
+}
+
+.product-number {
+    color:var(--gold);
+    font-weight:800;
+    font-size:11px;
+}
+
+.product-content h3 {
+    font-family:Georgia,serif;
+    font-size:28px;
+    margin:4px 0 10px;
+}
+
+.product-content p {
+    color:var(--gray);
+    font-size:13px;
+}
+
+.product-link {
+    display:inline-block;
+    margin-top:18px;
+    color:var(--pink);
+    font-size:12px;
+    font-weight:800;
+}
+
+
+/* FEATURE */
+
+.feature-section {
+    background:#f7e7ed;
+    padding:110px 0;
+}
+
+.feature-container {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:.85fr 1fr;
+    gap:90px;
+    align-items:center;
+}
+
+.feature-image img {
+    width:100%;
+    height:620px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:var(--shadow);
+}
+
+.feature-content h2 {
+    font-family:Georgia,serif;
+    font-size:clamp(40px,5vw,60px);
+    line-height:1.1;
+}
+
+.feature-content > p {
+    color:var(--gray);
+    margin:20px 0 30px;
+}
+
+.feature-item {
+    display:flex;
+    gap:15px;
+    padding:18px 0;
+    border-top:1px solid rgba(53,42,46,.12);
+}
+
+.feature-icon {
+    width:40px;
+    height:40px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:white;
+    display:grid;
+    place-items:center;
+    color:var(--pink);
+}
+
+.feature-item h3 {
+    font-size:15px;
+}
+
+.feature-item p {
+    color:var(--gray);
+    font-size:12px;
+}
+
+
+/* QUOTE */
+
+.quote-section {
+    background:white;
+    padding:100px 20px;
+    text-align:center;
+}
+
+.quote-container {
+    width:min(850px,92%);
+    margin:auto;
+}
+
+.quote-symbol {
+    font-family:Georgia,serif;
+    font-size:90px;
+    color:#e4bdc9;
+}
+
+.quote-container p {
+    font-family:Georgia,serif;
+    font-size:clamp(25px,4vw,40px);
+    line-height:1.25;
+}
+
+.quote-container strong {
+    display:block;
+    margin-top:25px;
+    color:var(--gold);
+    font-size:10px;
+    letter-spacing:.2em;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    grid-auto-rows:260px;
+    gap:15px;
+}
+
+.gallery-item {
+    position:relative;
+    overflow:hidden;
+    border-radius:22px;
+    cursor:pointer;
+}
+
+.gallery-item.large {
+    grid-row:span 2;
+}
+
+.gallery-item img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img {
+    transform:scale(1.05);
+}
+
+.gallery-caption {
+    position:absolute;
+    bottom:15px;
+    left:15px;
+    background:white;
+    padding:9px 13px;
+    border-radius:12px;
+    font-size:11px;
+    font-weight:700;
+}
+
+
+/* ORDER */
+
+.order-section {
+    padding:110px 0;
+    background:var(--dark);
+    color:white;
+}
+
+.order-container {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr .85fr;
+    gap:80px;
+    align-items:center;
+}
+
+.order-text h2 {
+    font-family:Georgia,serif;
+    font-size:clamp(42px,5vw,65px);
+    line-height:1.1;
+}
+
+.order-text p {
+    color:#cfc3c7;
+    max-width:550px;
+    margin-top:20px;
+}
+
+.wa-info {
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-top:25px;
+    padding:12px 17px;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:30px;
+    color:#f2b1ca;
+    font-weight:700;
+    font-size:13px;
+}
+
+.order-form {
+    background:white;
+    color:var(--dark);
+    padding:30px;
+    border-radius:28px;
+    box-shadow:0 25px 60px rgba(0,0,0,.2);
+}
+
+.order-form h3 {
+    color:var(--pink);
+    letter-spacing:.15em;
+    font-size:12px;
+    margin-bottom:20px;
+}
+
+.form-group {
+    margin-bottom:16px;
+}
+
+.form-group label {
+    display:block;
+    font-size:11px;
+    font-weight:800;
+    margin-bottom:7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width:100%;
+    border:1px solid var(--border);
+    background:#fffafc;
+    padding:12px;
+    border-radius:12px;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color:var(--pink);
+    box-shadow:0 0 0 4px rgba(217,75,130,.08);
+}
+
+
+/* FOOTER */
+
+footer {
+    background:#2b2326;
+    color:#c9bfc2;
+    padding:35px 0;
+}
+
+.footer-container {
+    width:min(1160px,92%);
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr auto auto;
+    gap:40px;
+    align-items:center;
+}
+
+.footer-brand {
+    color:#e7c889;
+    font-family:Georgia,serif;
+}
+
+.footer-sub {
+    display:block;
+    font-size:8px;
+    letter-spacing:.2em;
+}
+
+.footer-menu {
+    display:flex;
+    gap:20px;
+    font-size:11px;
+}
+
+.copyright {
+    font-size:10px;
+}
+
+
+/* LIGHTBOX */
+
+.lightbox {
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    background:rgba(20,14,17,.92);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+}
+
+.lightbox.active {
+    opacity:1;
+    visibility:visible;
+}
+
+.lightbox img {
+    max-width:90%;
+    max-height:85vh;
+    border-radius:18px;
+}
+
+.close-lightbox {
+    position:absolute;
+    top:20px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:900px) {
+
+    .menu-button {
+        display:block;
+    }
+
+    .nav-menu {
+        position:absolute;
+        top:80px;
+        left:4%;
+        right:4%;
+        background:white;
+        border:1px solid var(--border);
+        border-radius:18px;
+        padding:15px;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav-menu.active {
+        display:flex;
+    }
+
+    .hero-container,
+    .feature-container,
+    .order-container {
+        grid-template-columns:1fr;
+    }
+
+    .products {
+        grid-template-columns:1fr 1fr;
+    }
+
+    .footer-container {
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .footer-menu {
+        justify-content:center;
+    }
+}
+
+@media(max-width:600px) {
+
+    .hero {
+        padding:60px 0;
+    }
+
+    .hero h1 {
+        font-size:60px;
+    }
+
+    .hero-image-box img {
+        height:420px;
+    }
+
+    .info-container {
+        grid-template-columns:1fr 1fr;
+    }
+
+    .products {
+        grid-template-columns:1fr;
+    }
+
+    .gallery {
+        grid-template-columns:1fr 1fr;
+        grid-auto-rows:210px;
+    }
+
+    .gallery-item.large {
+        grid-column:span 2;
+    }
+
+    .feature-image img {
+        height:430px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">AG</div>
+
+<div>
+<strong>ARQUEEN GLOW</strong>
+<small>PREMIUM SKINCARE</small>
+</div>
+
+</a>
+
+<button
+class="menu-button"
+id="menuButton"
+type="button"
+>
+☰
+</button>
+
+<ul class="nav-menu" id="navMenu">
+
+<li><a href="#home">Beranda</a></li>
+<li><a href="#produk">Produk</a></li>
+<li><a href="#keunggulan">Keunggulan</a></li>
+<li><a href="#galeri">Galeri</a></li>
+
+<li>
+<a href="#pesan" class="nav-order">
+Pesan Sekarang
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-container">
+
+<div class="hero-content">
+
+<span class="label">
+PREMIUM DAILY SKINCARE
+</span>
+
+<h1>
+Brighten.
+<span>Protect.</span>
+Glow.
+</h1>
+
+<p class="hero-text">
+Rawat kulitmu dengan rutinitas skincare
+yang sederhana, nyaman, dan menyenangkan
+untuk menemani setiap harimu.
+</p>
+
+<div class="buttons">
+
+<a href="#produk" class="btn btn-pink">
+Lihat Produk →
+</a>
+
+<a href="#galeri" class="btn btn-white">
+Lihat Galeri
+</a>
+
+</div>
+
+<div class="hero-points">
+
+<span>✦ Tekstur ringan</span>
+<span>✦ Daily skincare</span>
+<span>✦ Fresh glow</span>
+
+</div>
+
+</div>
+
+
+<div class="hero-image-box">
+
+<div class="image-header">
+<span>ARQUEEN GLOW</span>
+<span>PREMIUM SKINCARE</span>
+</div>
+
+<img
+src="Arqueen product.jpeg"
+alt="Arqueen Glow Premium Skincare"
+>
+
+<div class="image-caption">
+
+<span>GLOW ROUTINE</span>
+
+<strong>
+Rawat kulitmu, pancarkan glow-mu.
+</strong>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INFO BAR -->
+
+<section class="info-bar">
+
+<div class="info-container">
+
+<div class="info-item">
+<strong>01</strong>
+<span>Daily Care</span>
+</div>
+
+<div class="info-item">
+<strong>02</strong>
+<span>Light Texture</span>
+</div>
+
+<div class="info-item">
+<strong>03</strong>
+<span>Fresh Glow</span>
+</div>
+
+<div class="info-item">
+<strong>04</strong>
+<span>Premium Care</span>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUK -->
+
+<section class="section" id="produk">
+
+<div class="section-title">
+
+<span class="label">
+DISCOVER YOUR ROUTINE
+</span>
+
+<h2>
+Temukan ritual glow-mu.
+</h2>
+
+<p>
+Bangun rutinitas skincare yang praktis
+dengan rangkaian Arqueen Glow.
+</p>
+
+</div>
+
+
+<div class="products">
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="pemakaian.jpeg"
+alt="Glow Infuse"
+>
+
+<span class="product-label">
+SERUM
+</span>
+
+</div>
+
+<div class="product-content">
+
+<span class="product-number">
+01
+</span>
+
+<h3>
+Glow Infuse
+</h3>
+
+<p>
+Serum dengan perpaduan
+Niacinamide, Peptide Complex
+dan Hyaluronic Acid untuk
+melengkapi rutinitas skincare.
+</p>
+
+<a
+href="#pesan"
+class="product-link"
+onclick="pilihProduk('Glow Infuse')"
+>
+Pilih Produk →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="pemakaian2.jpeg"
+alt="White Glow 3 in 1"
+>
+
+<span class="product-label">
+3 IN 1
+</span>
+
+</div>
+
+<div class="product-content">
+
+<span class="product-number">
+02
+</span>
+
+<h3>
+White Glow 3 in 1
+</h3>
+
+<p>
+Perawatan praktis untuk menemani
+rutinitas perawatan kulit
+sehari-hari.
+</p>
+
+<a
+href="#pesan"
+class="product-link"
+onclick="pilihProduk('White Glow 3 in 1')"
+>
+Pilih Produk →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="pemakaian4.jpeg"
+alt="Facial Cleanser"
+>
+
+<span class="product-label">
+CLEANSER
+</span>
+
+</div>
+
+<div class="product-content">
+
+<span class="product-number">
+03
+</span>
+
+<h3>
+Facial Cleanser
+</h3>
+
+<p>
+Facial cleanser dengan
+Centella Asiatica, Green Tea
+dan Licorice sebagai langkah
+awal skincare.
+</p>
+
+<a
+href="#pesan"
+class="product-link"
+onclick="pilihProduk('Facial Cleanser')"
+>
+Pilih Produk →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- KEUNGGULAN -->
+
+<section class="feature-section" id="keunggulan">
+
+<div class="feature-container">
+
+<div class="feature-image">
+
+<img
+src="pemakaian5.jpeg"
+alt="Arqueen Glow"
+>
+
+</div>
+
+
+<div class="feature-content">
+
+<span class="label">
+WHY ARQUEEN GLOW
+</span>
+
+<h2>
+Perawatan yang terasa cantik,
+dari langkah pertama.
+</h2>
+
+<p>
+Mulai dari membersihkan hingga merawat
+kulit, Arqueen Glow hadir untuk melengkapi
+rutinitas skincare harianmu.
+</p>
+
+
+<div class="feature-item">
+
+<span class="feature-icon">✦</span>
+
+<div>
+
+<h3>Niacinamide</h3>
+
+<p>
+Membantu mendukung tampilan
+kulit yang lebih merata.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<span class="feature-icon">✿</span>
+
+<div>
+
+<h3>Green Tea</h3>
+
+<p>
+Memberikan sentuhan fresh
+untuk rutinitas harian.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<span class="feature-icon">♡</span>
+
+<div>
+
+<h3>Centella Asiatica</h3>
+
+<p>
+Membantu menjaga kenyamanan
+kulit dalam rutinitas skincare.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="feature-item">
+
+<span class="feature-icon">◇</span>
+
+<div>
+
+<h3>Licorice</h3>
+
+<p>
+Melengkapi rangkaian bahan
+perawatan kulit.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUOTE -->
+
+<section class="quote-section">
+
+<div class="quote-container">
+
+<div class="quote-symbol">
+“
+</div>
+
+<p>
+Skincare bukan tentang menjadi orang lain.
+Ini tentang merawat versi terbaik dari dirimu,
+satu langkah setiap hari.
+</p>
+
+<strong>
+ARQUEEN GLOW
+</strong>
+
+</div>
+
+</section>
+
+
+<!-- GALERI -->
+
+<section class="section" id="galeri">
+
+<div class="section-title">
+
+<span class="label">
+OUR GALLERY
+</span>
+
+<h2>
+Glow yang layak dipamerkan.
+</h2>
+
+<p>
+Tempatkan foto produk, detail kemasan,
+bundle, maupun foto promosi di sini.
+</p>
+
+</div>
+
+
+<div class="gallery">
+
+<div
+class="gallery-item large"
+onclick="openGallery(this)"
+>
+
+<img
+src="pemakaian11.jpeg"
+alt="ARQUEEN PRODUCT"
+>
+
+<span class="gallery-caption">
+Promo Utama
+</span>
+
+</div>
+
+
+<div
+class="gallery-item"
+onclick="openGallery(this)"
+>
+
+<img
+src="pemakaian7.jpeg"
+alt="Arqueen Glow Product"
+>
+
+</div>
+
+
+<div
+class="gallery-item"
+onclick="openGallery(this)"
+>
+
+<img
+src="pemakaian8.jpeg"
+alt="Arqueen Glow Product"
+>
+
+</div>
+
+
+<div
+class="gallery-item"
+onclick="openGallery(this)"
+>
+
+<img
+src="pemakaian9.jpeg"
+alt="Arqueen Glow Product"
+>
+
+</div>
+
+
+<div
+class="gallery-item"
+onclick="openGallery(this)"
+>
+
+<img
+src="pemakaian10.jpeg"
+alt="Arqueen Glow Product"
+>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ORDER -->
+
+<section class="order-section" id="pesan">
+
+<div class="order-container">
+
+<div class="order-text">
+
+<span class="label">
+READY TO GLOW?
+</span>
+
+<h2>
+Mulai rutinitas
+glow-mu hari ini.
+</h2>
+
+<p>
+Tertarik dengan produk Arqueen Glow?
+Isi form di samping untuk mengirim
+permintaan pemesanan melalui WhatsApp.
+</p>
+
+<div class="wa-info">
+WhatsApp: 0812-6710-8947
+</div>
+
+</div>
+
+
+<!-- FORM -->
+
+<form
+class="order-form"
+id="orderForm"
+>
+
+<h3>
+ORDER FORM
+</h3>
+
+
+<div class="form-group">
+
+<label for="nama">
+Nama
+</label>
+
+<input
+type="text"
+name="nama"
+id="nama"
+placeholder="Nama kamu"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="whatsapp">
+Nomor WhatsApp
+</label>
+
+<input
+type="tel"
+name="whatsapp"
+id="whatsapp"
+placeholder="08xxxxxxxxxx"
+required
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="produkSelect">
+Pilih Produk
+</label>
+
+<select
+name="produk"
+id="produkSelect"
+required
+>
+
+<option value="">
+-- Pilih Produk --
+</option>
+
+<option value="Glow Infuse">
+Glow Infuse
+</option>
+
+<option value="White Glow 3 in 1">
+White Glow 3 in 1
+</option>
+
+<option value="Facial Cleanser">
+Facial Cleanser
+</option>
+
+<option value="Bundle">
+Bundle
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label for="pesanText">
+Pesan
+</label>
+
+<textarea
+name="pesan"
+id="pesanText"
+rows="4"
+placeholder="Tulis pertanyaan atau permintaan kamu..."
+></textarea>
+
+</div>
+
+
+<!-- TIDAK LAGI TYPE SUBMIT -->
+
+<button
+type="button"
+class="btn btn-pink"
+style="width:100%;"
+onclick="kirimWhatsApp()"
+>
+Kirim Pesanan →
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+
+<div class="footer-brand">
+ARQUEEN GLOW
+</div>
+
+<span class="footer-sub">
+PREMIUM SKINCARE
+</span>
+
+<p>
+Brighten. Protect. Glow.
+</p>
+
+</div>
+
+
+<div class="footer-menu">
+
+<a href="#home">
+Beranda
+</a>
+
+<a href="#produk">
+Produk
+</a>
+
+<a href="#galeri">
+Galeri
+</a>
+
+<a href="#pesan">
+Pesan
+</a>
+
+</div>
+
+
+<div class="copyright">
+© 2026 Arqueen Glow
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- LIGHTBOX -->
+
+<div
+class="lightbox"
+id="lightbox"
+onclick="closeGallery()"
+>
+
+<button
+class="close-lightbox"
+type="button"
+onclick="closeGallery()"
+>
+×
+</button>
+
+<img
+id="galleryImage"
+src=""
+alt="Preview"
+onclick="event.stopPropagation()"
+>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* ======================================================
+   MENU MOBILE
+====================================================== */
+
+const menuButton =
+    document.getElementById("menuButton");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+if (menuButton && navMenu) {
+
+    menuButton.addEventListener(
+        "click",
+        function () {
+
+            navMenu.classList.toggle("active");
+
+        }
+    );
+
+
+    document
+        .querySelectorAll(".nav-menu a")
+        .forEach(function (link) {
+
+            link.addEventListener(
+                "click",
+                function () {
+
+                    navMenu.classList.remove("active");
+
+                }
+            );
+
+        });
+
+}
+
+
+/* ======================================================
+   PILIH PRODUK
+====================================================== */
+
+function pilihProduk(namaProduk) {
+
+    const select =
+        document.getElementById("produkSelect");
+
+    if (select) {
+
+        select.value = namaProduk;
+
+    }
+
+}
+
+
+/* ======================================================
+   WHATSAPP
+====================================================== */
+
+function kirimWhatsApp() {
+
+    const namaElement =
+        document.getElementById("nama");
+
+    const whatsappElement =
+        document.getElementById("whatsapp");
+
+    const produkElement =
+        document.getElementById("produkSelect");
+
+    const pesanElement =
+        document.getElementById("pesanText");
+
+
+    if (
+        !namaElement ||
+        !whatsappElement ||
+        !produkElement ||
+        !pesanElement
+    ) {
+
+        alert(
+            "Form belum dapat diproses. Silakan refresh halaman."
+        );
+
+        return;
+
+    }
+
+
+    const nama =
+        namaElement.value.trim();
+
+    const whatsapp =
+        whatsappElement.value.trim();
+
+    const produk =
+        produkElement.value.trim();
+
+    const pesan =
+        pesanElement.value.trim();
+
+
+    if (
+        nama === "" ||
+        whatsapp === "" ||
+        produk === ""
+    ) {
+
+        alert(
+            "Mohon lengkapi Nama, Nomor WhatsApp, dan Produk terlebih dahulu."
+        );
+
+        return;
+
+    }
+
+
+    /*
+       NOMOR OWNER
+       0812-6710-8947
+       menjadi
+       6281267108947
+    */
+
+    const nomorOwner =
+        "6281267108947";
+
+
+    const pesanWA =
+        "Halo Arqueen Glow!" +
+        "\n\n" +
+
+        "Saya ingin melakukan pemesanan." +
+        "\n\n" +
+
+        "Nama: " +
+        nama +
+
+        "\n" +
+
+        "Nomor WhatsApp saya: " +
+        whatsapp +
+
+        "\n" +
+
+        "Produk: " +
+        produk +
+
+        "\n" +
+
+        "Pesan: " +
+        (pesan || "-") +
+
+        "\n\n" +
+
+        "Mohon informasi selanjutnya. Terima kasih.";
+
+
+    const urlWhatsApp =
+        "https://wa.me/" +
+        nomorOwner +
+        "?text=" +
+        encodeURIComponent(pesanWA);
+
+
+    /*
+       Buka WhatsApp.
+       _blank membuat browser membuka
+       halaman WhatsApp tanpa menggantung
+       halaman Vercel.
+    */
+
+    window.open(
+        urlWhatsApp,
+        "_blank"
+    );
+
+}
+
+
+/* ======================================================
+   GALLERY LIGHTBOX
+====================================================== */
+
+function openGallery(element) {
+
+    const image =
+        element.querySelector("img");
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const galleryImage =
+        document.getElementById("galleryImage");
+
+
+    if (
+        !image ||
+        !lightbox ||
+        !galleryImage
+    ) {
+
+        return;
+
+    }
+
+
+    galleryImage.src =
+        image.src;
+
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow =
+        "hidden";
+
+}
+
+
+function closeGallery() {
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+
+    if (!lightbox) {
+
+        return;
+
+    }
+
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow =
+        "auto";
+
+}
+
+
+/* ======================================================
+   ESC UNTUK MENUTUP GALERI
+====================================================== */
+
+document.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Escape") {
+
+            closeGallery();
+
+        }
+
+    }
+);
+
+
+/* ======================================================
+   ANIMASI SCROLL
+====================================================== */
+
+if ("IntersectionObserver" in window) {
+
+    const observer =
+        new IntersectionObserver(
+
+            function (entries) {
+
+                entries.forEach(
+                    function (entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.style.opacity =
+                                "1";
+
+                            entry.target.style.transform =
+                                "translateY(0)";
+
+                        }
+
+                    }
+                );
+
+            },
+
+            {
+                threshold:0.12
+            }
+
+        );
+
+
+    document
+        .querySelectorAll(
+            ".product-card, .feature-item, .gallery-item"
+        )
+        .forEach(
+            function (element) {
+
+                element.style.opacity =
+                    "0";
+
+                element.style.transform =
+                    "translateY(30px)";
+
+                element.style.transition =
+                    "all .7s ease";
+
+                observer.observe(element);
+
+            }
+        );
+
+}
+
+</script>
+
+</body>
+</html>
